@@ -1,0 +1,8 @@
+Project Wake-On-LAN: Remotely Power ON a PC over the internet using the Wake-on-LAN protocol
+
+Wake-on-LAN (“WOL”) is implemented using a specially designed packet called a magic packet, which is sent to all computers in a network, among them the computer to be awakened.
+The magic packet contains the MAC address of the destination computer, an identifying number built into each network interface card (“NIC”) or other ethernet devices in a computer, that enables it to be uniquely recognized and addressed on a network.
+Powered-down or turned-off computers capable of Wake-on-LAN will contain network devices able to “listen” to incoming packets in low-power mode while the system is powered down.
+If a magic packet is received that is directed to the device’s MAC address, the NIC signals the computer’s power supply or motherboard to initiate system wake-up, much in the same way as pressing the power button would do.
+The magic packet is sent on the data link layer (layer 2 in the OSI model) and when sent, is broadcast to all attached devices on a given network, using the network broadcast address; the IP-address (layer 3 in the OSI model) is not used.
+
